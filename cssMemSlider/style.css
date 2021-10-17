@@ -46,6 +46,7 @@ body {
 
 #radio-1:checked ~ .slides > .main-slide {
   margin-left: 0;
+  animation: show 3s 1;
 }
 
 #radio-2:checked ~ .slides > .main-slide {
@@ -62,6 +63,22 @@ body {
 
 #radio-5:checked ~ .slides > .main-slide {
   margin-left: -80%;
+}
+
+#radio-2:checked ~ .slides > .slide:nth-child(2),
+#radio-3:checked ~ .slides > .slide:nth-child(3),
+#radio-4:checked ~ .slides > .slide:nth-child(4),
+#radio-5:checked ~ .slides > .slide:nth-child(5) {
+  animation: show 3s 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #radio-1:checked ~ .legend > .slides-texts > .text-1 {
