@@ -115,16 +115,92 @@ body {
 .label {
   cursor: pointer;
   width: calc(8rem / 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.label::before {
+.label-icon {
   display: block;
-  content: "";
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   background-color: cornflowerblue;
-  cursor: pointer;
+}
+
+.label:hover .label-icon {
+  background-color: #fff;
+}
+
+.label:active .label-icon {
+  background-color: #d8d66c;
+}
+
+#radio-1:checked ~ .legend > .navigation > .label[for="radio-1"] > .label-icon,
+#radio-2:checked ~ .legend > .navigation > .label[for="radio-2"] > .label-icon,
+#radio-3:checked ~ .legend > .navigation > .label[for="radio-3"] > .label-icon,
+#radio-4:checked ~ .legend > .navigation > .label[for="radio-4"] > .label-icon,
+#radio-5:checked ~ .legend > .navigation > .label[for="radio-5"] > .label-icon {
+  background-color: transparent;
+  border: 0.2rem solid cornflowerblue;
+}
+
+#radio-1:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-1"]:hover
+  > .label-icon,
+#radio-2:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-2"]:hover
+  > .label-icon,
+#radio-3:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-3"]:hover
+  > .label-icon,
+#radio-4:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-4"]:hover
+  > .label-icon,
+#radio-5:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-5"]:hover
+  > .label-icon {
+  background-color: transparent;
+  border: 0.2rem solid #fff;
+}
+
+#radio-1:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-1"]:active
+  > .label-icon,
+#radio-2:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-2"]:active
+  > .label-icon,
+#radio-3:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-3"]:active
+  > .label-icon,
+#radio-4:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-4"]:active
+  > .label-icon,
+#radio-5:checked
+  ~ .legend
+  > .navigation
+  > .label[for="radio-5"]:active
+  > .label-icon {
+  background-color: transparent;
+  border: 0.2rem solid #d8d66c;
 }
 
 @media (max-width: 768px) {
