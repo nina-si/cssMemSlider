@@ -66,22 +66,27 @@ body {
 
 #radio-1:checked ~ .legend > .slides-texts > .text-1 {
   display: block;
+  animation: opacity 2s 1;
 }
 
 #radio-2:checked ~ .legend > .slides-texts > .text-2 {
   display: block;
+  animation: opacity 2s 1;
 }
 
 #radio-3:checked ~ .legend > .slides-texts > .text-3 {
   display: block;
+  animation: opacity 2s 1;
 }
 
 #radio-4:checked ~ .legend > .slides-texts > .text-4 {
   display: block;
+  animation: opacity 3s 1;
 }
 
 #radio-5:checked ~ .legend > .slides-texts > .text-5 {
   display: block;
+  animation: opacity 2s 1;
 }
 
 .legend {
@@ -103,6 +108,15 @@ body {
   margin-top: 0;
   font-size: 1.3rem;
   line-height: 1.3rem;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .navigation {
