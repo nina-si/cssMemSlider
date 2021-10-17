@@ -15,7 +15,7 @@ body {
 }
 
 .slider {
-  width: 50%;
+  width: 60%;
   height: auto;
   margin-top: 4rem;
   overflow: hidden;
@@ -24,6 +24,7 @@ body {
 .slides {
   display: flex;
   width: 500%;
+  margin-bottom: 1rem;
 }
 
 .slider input {
@@ -89,7 +90,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 1rem;
 }
 
 .slides-texts {
@@ -102,6 +102,7 @@ body {
   width: 100%;
   margin-top: 0;
   font-size: 1.3rem;
+  line-height: 1.3rem;
 }
 
 .navigation {
@@ -124,4 +125,27 @@ body {
   border-radius: 50%;
   background-color: cornflowerblue;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .legend {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slides-texts,
+  .text {
+    width: 100%;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .navigation {
+    margin-bottom: 1rem;
+  }
 }
