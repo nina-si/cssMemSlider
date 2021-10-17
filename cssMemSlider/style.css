@@ -15,9 +15,9 @@ body {
 }
 
 .slider {
-  border: 0.2rem solid #fff;
-  width: 70%;
+  width: 50%;
   height: auto;
+  margin-top: 4rem;
   overflow: hidden;
 }
 
@@ -26,38 +26,61 @@ body {
   width: 500%;
 }
 
-.slides input {
+.slider input {
   display: none;
 }
 
 .slide {
   width: 20%;
   transition: all 0.6s ease;
+  border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .slide img {
   width: 100%;
   height: auto;
+  border-radius: 0.4rem;
 }
 
-#radio-1:checked ~ .main-slide {
+#radio-1:checked ~ .slides > .main-slide {
   margin-left: 0;
 }
 
-#radio-2:checked ~ .main-slide {
+#radio-2:checked ~ .slides > .main-slide {
   margin-left: -20%;
 }
 
-#radio-3:checked ~ .main-slide {
+#radio-3:checked ~ .slides > .main-slide {
   margin-left: -40%;
 }
 
-#radio-4:checked ~ .main-slide {
+#radio-4:checked ~ .slides > .main-slide {
   margin-left: -60%;
 }
 
-#radio-5:checked ~ .main-slide {
+#radio-5:checked ~ .slides > .main-slide {
   margin-left: -80%;
+}
+
+#radio-1:checked ~ .legend > .slides-texts > .text-1 {
+  display: block;
+}
+
+#radio-2:checked ~ .legend > .slides-texts > .text-2 {
+  display: block;
+}
+
+#radio-3:checked ~ .legend > .slides-texts > .text-3 {
+  display: block;
+}
+
+#radio-4:checked ~ .legend > .slides-texts > .text-4 {
+  display: block;
+}
+
+#radio-5:checked ~ .legend > .slides-texts > .text-5 {
+  display: block;
 }
 
 .legend {
@@ -67,6 +90,18 @@ body {
   align-items: flex-start;
   width: 100%;
   padding: 1rem;
+}
+
+.slides-texts {
+  width: 70%;
+  overflow: hidden;
+}
+
+.text {
+  display: none;
+  width: 100%;
+  margin-top: 0;
+  font-size: 1.3rem;
 }
 
 .navigation {
