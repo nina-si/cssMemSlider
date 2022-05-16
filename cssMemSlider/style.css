@@ -1,7 +1,5 @@
 html,
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
 }
 
@@ -167,11 +165,11 @@ body {
   background-color: #d8d66c;
 }
 
-#radio-1:checked ~ .legend > .navigation > .label[for="radio-1"] > .label-icon,
-#radio-2:checked ~ .legend > .navigation > .label[for="radio-2"] > .label-icon,
-#radio-3:checked ~ .legend > .navigation > .label[for="radio-3"] > .label-icon,
-#radio-4:checked ~ .legend > .navigation > .label[for="radio-4"] > .label-icon,
-#radio-5:checked ~ .legend > .navigation > .label[for="radio-5"] > .label-icon {
+#radio-1:checked ~ .legend > .navigation > .label[for='radio-1'] > .label-icon,
+#radio-2:checked ~ .legend > .navigation > .label[for='radio-2'] > .label-icon,
+#radio-3:checked ~ .legend > .navigation > .label[for='radio-3'] > .label-icon,
+#radio-4:checked ~ .legend > .navigation > .label[for='radio-4'] > .label-icon,
+#radio-5:checked ~ .legend > .navigation > .label[for='radio-5'] > .label-icon {
   background-color: transparent;
   border: 0.2rem solid cornflowerblue;
 }
@@ -179,27 +177,27 @@ body {
 #radio-1:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-1"]:hover
+  > .label[for='radio-1']:hover
   > .label-icon,
 #radio-2:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-2"]:hover
+  > .label[for='radio-2']:hover
   > .label-icon,
 #radio-3:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-3"]:hover
+  > .label[for='radio-3']:hover
   > .label-icon,
 #radio-4:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-4"]:hover
+  > .label[for='radio-4']:hover
   > .label-icon,
 #radio-5:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-5"]:hover
+  > .label[for='radio-5']:hover
   > .label-icon {
   background-color: transparent;
   border: 0.2rem solid #fff;
@@ -208,27 +206,27 @@ body {
 #radio-1:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-1"]:active
+  > .label[for='radio-1']:active
   > .label-icon,
 #radio-2:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-2"]:active
+  > .label[for='radio-2']:active
   > .label-icon,
 #radio-3:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-3"]:active
+  > .label[for='radio-3']:active
   > .label-icon,
 #radio-4:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-4"]:active
+  > .label[for='radio-4']:active
   > .label-icon,
 #radio-5:checked
   ~ .legend
   > .navigation
-  > .label[for="radio-5"]:active
+  > .label[for='radio-5']:active
   > .label-icon {
   background-color: transparent;
   border: 0.2rem solid #d8d66c;
